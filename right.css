@@ -1,0 +1,10 @@
+.right{
+	position: fixed;
+	right: 0px;
+	top: 60px;
+	bottom: 0px;
+	width: 55px;
+	border-left-style: solid;
+	border-width: thin;
+	border-left-color: rgb(240,243,244);
+}

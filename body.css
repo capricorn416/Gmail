@@ -1,0 +1,33 @@
+.mainbody{
+	position: fixed;
+	left: 255px;
+	top: 60px;
+	width: 1050px;
+	height: 330px;
+}
+
+.column{
+	left: 255px;
+	height: 45px;
+	width: 1035px;
+	border-bottom-color: rgb(240,243,244);
+	border-bottom-style: solid;
+	border-width: thin;
+}
+
+.cln1option{
+	display: inline-block;
+	margin-top: 0px;
+	width: 40px;
+	height: 40px;
+}
+
+#input{
+	float: right;
+	margin-right: 20px;
+	margin-top: 8px;
+	height: 31px;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
