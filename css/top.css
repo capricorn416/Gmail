@@ -1,0 +1,68 @@
+.top{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(240,243,244);
+	border-bottom-width: thin;
+	height: 60px;
+}
+
+#menuLog{
+	position: fixed;
+	left: 25px;
+	top: 20px;
+}
+
+#logo{
+	position: fixed;
+	left: 65px;
+	top: 15px;
+}
+
+#gm{
+	position: fixed;
+	left: 120px;
+	top: 17px;
+	font-size: 20px;
+}
+
+#search{
+	position: fixed;
+	left: 255px;
+	top: 8px;
+	height: 42px;
+	background-color: rgb(240,243,244);
+	border-style: none;
+	border-radius: 8px;
+	width: 50%;	
+}
+
+#left{
+	margin-left: 20px;
+	width: 10%;
+}	
+#body{
+	position: absolute;
+	margin-top: 6px;
+	margin-left: 10px;
+	height: 29px;
+	border-style: none;
+	background: none;
+	width: 80%;
+	font-size: 16px;
+}
+
+#navigation{
+	position: absolute;
+	right: 35px;
+	top: 5px;
+	list-style-type: none;
+}
+	
+.nav{
+	display: inline;
+	margin-left: 25px;
+	top: 10px;
+}
