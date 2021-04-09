@@ -1,4 +1,4 @@
-.mainbody{
+.mainbody {
 	position: fixed;
 	left: 255px;
 	top: 60px;
@@ -6,7 +6,7 @@
 	height: 330px;
 }
 
-.column{
+.mainbody_column {
 	left: 255px;
 	height: 45px;
 	width: 1035px;
@@ -15,14 +15,20 @@
 	border-width: thin;
 }
 
-.cln1option{
+.column-option {
 	display: inline-block;
-	margin-top: 0px;
-	width: 40px;
-	height: 40px;
+	margin-top: 0;
+	margin-left: 0;
+	width: 20px;
+	height: 30px;
+	padding: 10px;
 }
 
-#input{
+.column-option_left {
+	margin-left: 5px;
+}
+
+.mainbody_input {
 	float: right;
 	margin-right: 20px;
 	margin-top: 8px;
@@ -30,4 +36,61 @@
 	border: none;
 	font-size: 16px;
 	cursor: pointer;
+}
+
+.column_open {
+	float: left;
+	margin-left: 18px;
+	margin-top: 15px;
+	width: 16px;
+}
+
+.column_tip {
+	 position: absolute;
+	 margin-top: 12px;
+	 margin-left: 13px;
+}
+
+.mainbody_save {	
+	position: fixed;
+	top: 500px;	
+	margin-left: 18px;
+	width: 220px;
+	height: 15px;
+}
+.mainbody_save-icon {
+	height: 6px;
+	background-color: rgb(240,243,244);
+	border-radius: 3px;
+}
+
+.mainbody_save-tip {
+	margin-top: 8px;
+}
+
+a {
+	text-decoration: none;
+	color: dimgrey;
+	font-size: 13px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.mainbody_tip,
+.mainbody_time {
+	position: fixed;
+	top: 492px;
+}
+
+.mainbody_tip {
+	padding-left: 380px;
+}
+
+.mainbody_time {
+	padding-left: 800px;
+	font-size: 13px;
+	color: dimgrey;
+	text-align: right;
 }

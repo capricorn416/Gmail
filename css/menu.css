@@ -1,57 +1,68 @@
-
-.menu{
+.menu {
 	position: fixed;
 	top: 60px;
-	left: 0px;
+	left: 0;
+	bottom: 0;
 	width: 255px;
-	
 }
-#writebutton{
+
+.menu_writebutton {
 	margin-top: 15px;
-	margin-left: 10px;
+	margin-left: 10px;	
+	height: 50px;
+	width: 120px;
 	background-color: white;
 	border-color: rgb(240,243,244);
 	border-width: thin;
 	border-radius: 25px;
-	height: 50px;
-	width: 120px;
 	box-shadow: 0px 1px 5px #888888;
 	cursor: pointer;
-	
 }
-#btna{
+
+.writebutton_img {
 	float: left;
 	margin-left: 5px;
 }
 
-#btnb{
+.writebutton_word {
 	float: right;
 	margin-right: 20px;
 	margin-top: 5px;
 }
-	
-#menubox{
+
+.menu_box {
 	list-style: none;
 	margin-top: 15px;
-	border: none;
 	width: 255px;
 	height: 180px;
+	border: none;
 }
 
-.icon{
+.menu_opt,
+.meeting_opt {
+	margin-top: 13px;
+}
+
+.opt-icon {
 	float: left;
 	margin-left: -12px;
+	width: 20px;
 }
-.word{
+
+.opt-word {
 	margin-left: 15px;
-}
-.opt{
-	margin-top: 15px;
 	font-size: 14px;
 }
 
+.opt-word,
+.meeting_head,
+.meeting_opt,
+.hangouts_head,
+.tip {
+	font-size: 14px;
+}
 
-#meeting1{
+.meeting {
 	height: 105px;
 	border-top-style: solid;
 	border-top-color: rgb(240,243,244);
@@ -59,49 +70,68 @@
 	border-bottom-width: thin;
 	border-bottom-color: rgb(240,243,244);
 }
-.opt2{
-	margin-top: 15px;
-	font-size: 14px;
-}
 
-#meetingoption{
-	margin-top: 20px;
-	list-style: none;
-}
-
-#user{
-	float: left;
-	margin-top: 40px;
-	margin-left: 35px;
-}
-
-#tip{
+.meeting_head,
+.hangouts_head {
 	position: absolute;
-	border-top-style: solid;
-	border-width: thin;
-	border-top-color: rgb(240,243,244);
-	margin-top: 80px;
-	width: 84%;
-	margin-left: 8%;
-	margin-right: 8% ;
+	margin-left: 25px;
+	margin-top: 10px;
 }
 
-#bottom{
-	position: fixed;
-	bottom: 0px;
+.meeting_body {
+	list-style: none;
+	margin-top: 20px;
+}
+
+.hangouts {
+	height: 75px;
+}
+
+.hangouts_user {
+	position: absolute;
+	top: 422px;
+	left: 23px;
+	width: 30px;
+}
+
+.hangouts_username {
+	position: absolute;
+	top: 425px;
+	left: 58px;
+}
+
+.hangouts_tip {
+	position: absolute;	
+	margin-top: 80px;
+	margin-left: 8%;
+	margin-right: 8%;
+	width: 84%;
 	border-top-style: solid;
 	border-width: thin;
 	border-top-color: rgb(240,243,244);
+}
+
+.tip {
+	position: absolute;
+	margin-top: 10%;
+	margin-left: 25%;
+}
+
+.bottom {
+	position: fixed;
+	bottom: 0;
 	height: 35px;
 	width: 255px;
+	border-top-style: solid;
+	border-width: thin;
+	border-top-color: rgb(240,243,244);
 }
 
-
-.btmoption{
+.bottom_opt {
 	display: inline-block;
 	margin: 0;
 	height: 35px;
-	left: 25%;
-	padding-top: 7px;
 	width: 35px;
+	padding-top: 7px;
+	padding-left: 6px;
 }

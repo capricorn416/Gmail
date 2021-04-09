@@ -1,68 +1,94 @@
-.top{
+.top {
 	position: fixed;
-	top: 0px;
-	left: 0px;
-	right: 0px;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
 	border-bottom-style: solid;
 	border-bottom-color: rgb(240,243,244);
 	border-bottom-width: thin;
-	height: 60px;
 }
 
-#menuLog{
+.top_menu,
+.top_logo,
+.top_search,
+.top_navigation {
 	position: fixed;
-	left: 25px;
-	top: 20px;
 }
 
-#logo{
-	position: fixed;
+.top_menu {
+	left: 17px;
+	top: 10px;
+	width: 22px;
+	height: 22px;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+.top_menu:hover {
+	background-color: gainsboro;
+	cursor: pointer;
+}
+
+.top_logo {
 	left: 65px;
 	top: 15px;
+	width: 110px;
 }
 
-#gm{
-	position: fixed;
-	left: 120px;
-	top: 17px;
+.top_logo:hover {
+	cursor: pointer;
+}
+
+.top_gm {
+	float: right;
+	margin-top: 2px;
 	font-size: 20px;
 }
 
-#search{
-	position: fixed;
+.top_search {
 	left: 255px;
 	top: 8px;
 	height: 42px;
+	width: 50%;	
 	background-color: rgb(240,243,244);
 	border-style: none;
 	border-radius: 8px;
-	width: 50%;	
 }
 
-#left{
-	margin-left: 20px;
-	width: 10%;
-}	
-#body{
-	position: absolute;
-	margin-top: 6px;
+.search_left {
+	float: left;
 	margin-left: 10px;
+	margin-top: 4px;
+	width: 20px;
+	height: 20px;
+	padding: 7px;
+	border-radius: 50%;
+}
+
+.search_left:hover {
+	background-color: gainsboro;
+	cursor: pointer;
+}
+
+.search_body {
+	position: absolute;
+	margin-left: 8px;
+	margin-top: 6px;
 	height: 29px;
+	width: 80%;
 	border-style: none;
 	background: none;
-	width: 80%;
 	font-size: 16px;
 }
 
-#navigation{
-	position: absolute;
+.top_navigation {
 	right: 35px;
-	top: 5px;
-	list-style-type: none;
+	top: 20px;
 }
-	
-.nav{
+
+.navigation-icon {
+	list-style: none;
 	display: inline;
 	margin-left: 25px;
-	top: 10px;
 }

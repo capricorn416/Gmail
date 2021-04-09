@@ -9,111 +9,135 @@
 		<link href="../css/right.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
+	</body>
+		<!--顶部-->
 		<div class="top">
-			<span id="menuLog"><img src="../png/menu.png" style="width: 20px;"/></span>
-			<span id="logo"><img src="../png/logo.png" style="width: 40px;"></span>
-			<span id="gm">Gmail</span>
-			<div id="search">
-				<span id="left"><img src="../png/left.png" style="width: 20px; margin-top: 11px;"></span>
-				<input type="text" id="body" placeholder="搜索邮件">
+			<span class="top_menu" title="主菜单"><img src="../png/menu.png" style="width: 20px;"/></span>
+			<span class="top_logo" title="Gmail"><img src="../png/logo.png" style="width: 40px;"><font class="top_gm">Gmail</font></span>
+			<div class="top_search">
+				<span class="search_left" title="搜索"><img src="../png/left.png" style="width: 20px;"></span>
+				<input type="text" class="search_body" placeholder="搜索邮件">
 			</div>
-			<span>
-				<ul id="navigation">
-					<li class="nav"><span class="na"><img src="../png/set.png" style="width: 20px;"></span></li>
-					<li class="nav"><span class="na"><img src="../png/set.png" style="width: 20px;"></span></li>
-					<li class="nav"><span class="na"><img src="../png/set.png" style="width: 20px;"></span></li>
-					<li class="nav"><span class="na"><img src="../png/user.png" style="width: 30px; float: right; margin-top: -4px;"></span></li>
+			<div class="top_navigation">
+				<ul class="navigation-icon">
+					<li class="navigation-icon"><img src="../png/set.png" style="width: 20px;"></li>
+					<li class="navigation-icon"><img src="../png/set.png" style="width: 20px;"></li>
+					<li class="navigation-icon"><img src="../png/set.png" style="width: 20px;"></li>
+					<li class="navigation-icon"><img src="../png/user.png" style="width: 30px; float: right; margin-top: -4px;"></li>
 				</ul>
-			</span>
+			</div>
 		</div>
 		
-		<!--主菜单-->
+		<!--左侧主菜单-->
 		<div class="menu">
 			<!--写邮件按钮-->
-			<span id="write">
-				<button type="button" id="writebutton">
-					<span><img src="../png/plus.png" style="width: 30px" id="btna"/></span>
-					<span id="btnb"><font>写邮件</font></span>
-				</button>
-			</span>
-			<span>
-				<br>
-					<ul id="menubox">
-						<li class="opt"><img src="../png/set.png" style="width: 20px;" class="icon"><span class="word">收件箱</span></li>
-						<li class="opt"><img src="../png/set.png" style="width: 20px;" class="icon"><span class="word">已加星标</span></li>
-						<li class="opt"><img src="../png/set.png" style="width: 20px;" class="icon"><span class="word">已延后</span></li>
-						<li class="opt"><img src="../png/set.png" style="width: 20px;" class="icon"><span class="word">已发邮件</span></li>
-						<li class="opt"><img src="../png/set.png" style="width: 20px;" class="icon"><span class="word">草稿</span></li>
-						<li class="opt"><img src="../png/set.png" style="width: 20px;" class="icon"><span class="word">垃圾邮件</span></li>
+			<button type="button" class="menu_writebutton">
+				<span class="writebutton_img"><img src="../png/plus.png" style="width: 30px"/></span>
+				<span class="writebutton_word"><font>写邮件</font></span>
+			</button>
+			<br>
+			<ul class="menu_box">
+				<li class="menu_opt"><img src="../png/set.png" class="opt-icon"><span class="opt-word">收件箱</span></li>
+				<li class="menu_opt"><img src="../png/set.png" class="opt-icon"><span class="opt-word">已加星标</span></li>
+				<li class="menu_opt"><img src="../png/set.png" class="opt-icon"><span class="opt-word">已延后</span></li>
+				<li class="menu_opt"><img src="../png/set.png" class="opt-icon"><span class="opt-word">已发邮件</span></li>
+				<li class="menu_opt"><img src="../png/set.png" class="opt-icon"><span class="opt-word">草稿</span></li>
+				<li class="menu_opt"><img src="../png/set.png" class="opt-icon"><span class="opt-word">垃圾邮件</span></li>
+			</ul>
+			
+			<!--会议-->
+			<div class="meeting">
+				<div class="meeting_head">会议</div>
+				<div>
+					<br>
+					<ul class="meeting_body">
+						<li class="meeting_opt"><img src="../png/set.png" class="opt-icon"><span class="opt-word">发起新会议</span></li>
+						<li class="meeting_opt"><img src="../png/set.png" class="opt-icon"><span class="opt-word">加入会议</span></li>
 					</ul>
-			</span>
-			
-			
-			<div id="meeting">
-				<!--会议-->
-				<div id="meeting1">
-					<span style="position: absolute; margin-left: 25px;margin-top: 10px;"><font style="font-size: 14px;">会议</font></span>
-					<span>
-						<br>
-						<ul id="meetingoption">
-							<li class="opt2"><img src="../png/set.png" style="width: 20px;" class="icon"><span class="word">发起新会议</span></li>
-							<li class="opt2"><img src="../png/set.png" style="width: 20px;" class="icon"><span class="word">加入会议</span></li>
-						</ul>
-					</span>
-				</div>
-				<!--hangouts-->
-				<div id="hangouts" style="height: 75px;">
-					<span style="position: absolute; margin-left: 25px;margin-top: 10px;"><font style="font-size: 14px;">Hangouts</font></span>
-					<div id="user"><img src="../png/user.png" style="width: 30px;"/ class="icon"><font style="margin-left: 5px;">username</font></div>
-					<div id="tip"><span style="position: absolute;margin-top: 10%;margin-left: 25%;"><font style="font-size: 14px">近期没有聊天<br>发起新的聊天</font></span></div>
-				</div>
-				<div id="bottom">
-					<div style="margin-left: 25%;">
-						<div class="btmoption"><img src="../png/set.png" style="width: 20px;padding-left: 6px;"/></div>
-						<div class="btmoption"><img src="../png/set.png" style="width: 20px;padding-left: 6px;"/></div>
-						<div class="btmoption"><img src="../png/set.png" style="width: 20px;padding-left: 6px;"/></div>
-					</div>
 				</div>
 			</div>
 			
-			<!--主体-->
-			<div class="mainbody">
-				<div id="cln1" class="column">
-					<div class="cln1option" style="margin-left: 5px;"><img src="../png/square.png" style="width: 25px; padding: 10px;"/></div>
-					<div class="cln1option"><img src="../png/refresh.png" style="width: 18px; padding: 10px;"/></div>
-					<div class="cln1option"><img src="../png/menu.png" style="width: 20px; padding: 10px;"/></div>
-					
-					<select id="input">
-						<option>拼音</option>
-						<option>双拼</option>
-						<option>双拼</option>
-						<option>双拼</option>
-						<option>双拼</option>
-						<option>双拼</option>
-						<option>双拼</option>
-						<option>五笔</option>
-					</select>
-				</div>
-				<div id="cln2" class="column">
-					<span style="float: left;margin-left: 18px;margin-top: 15px;">
-						<img src="../png/open.png" style="width: 16px;">
-					</span>
-					<font style="position: absolute; margin-top: 12px;margin-left: 13px;">
-						未读
-					</font>
-				</div>
-				<div id="cln3" class="column">
-					<span style="float: left;margin-left: 18px;margin-top: 15px;">
-						<img src="../png/open.png" style="width: 16px;">
-					</span>
-					<font style="position: absolute; margin-top: 12px;margin-left: 13px;">
-						其他邮件
-					</font>
+			<!--hangouts-->
+			<div class="hangouts">
+				<span class="hangouts_head">Hangouts</span>
+				<img src="../png/user.png" class="hangouts_user"/>
+				<span class="hangouts_username">username</span>
+				<div class="hangouts_tip">
+					<span class="tip">近期没有聊天<br>发起新的聊天</span>
 				</div>
 			</div>
 			
-			<!--侧边栏-->
-			<div class="right">
+			<!--左下-->
+			<div class="bottom">
+				<div style="margin-left: 25%;">
+					<div class="bottom_opt"><img src="../png/set.png" style="width: 20px;"/></div>
+					<div class="bottom_opt"><img src="../png/set.png" style="width: 20px;"/></div>
+					<div class="bottom_opt"><img src="../png/set.png" style="width: 20px;"/></div>
+				</div>
 			</div>
-	</body>
+		</div>
+		
+		<!--主体-->
+		<div class="mainbody">
+			<!--第一行-->
+			<div class="mainbody_column">
+				<div class="column-option column-option_left"><img src="../png/square.png" style="width: 25px;"/></div>
+				<div class="column-option"><img src="../png/refresh.png" style="width: 18px;"/></div>
+				<div class="column-option"><img src="../png/menu.png" style="width: 20px;"/></div>
+				<!--输入法-->
+				<select class="mainbody_input">
+					<option>拼音</option>
+					<option>双拼</option>
+					<option>双拼</option>
+					<option>双拼</option>
+					<option>双拼</option>
+					<option>双拼</option>
+					<option>双拼</option>
+					<option>五笔</option>
+				</select>
+			</div>
+			<!--第二行-->
+			<div class="mainbody_column">
+				<img src="../png/open.png" class="column_open">
+				<font class="column_tip">未读</font>
+			</div>
+			<!--第三行-->
+			<div class="mainbody_column">
+				<img src="../png/open.png" class="column_open">
+				<font class="column_tip">其他邮件</font>
+			</div>
+			<!--存储空间-->
+			<div class="mainbody_save">
+				<a href="#">
+					<div class="mainbody_save-icon"></div>
+					<div class="mainbody_save-tip">已使用0GB，共15GB</div>
+				</a>
+			<!--条款等-->
+			<div class="mainbody_tip">
+				<a href="#">条款</a>·<a href="#">隐私权</a>·<a href="#">使用规定</a>
+			</div>
+			<!--上次账号活动时间-->
+			<div class="mainbody_time">
+				上次账号活动时间：19分钟前
+				<br><a href="#">详细信息</a>
+			</div>
+		</div>
+		
+		<!--侧边栏-->
+		<div class="right-column">
+			<div class="right-column_icons">
+				<div class="right-column_icon"><img src="../png/set.png" style="width: 20px;"/></div>
+				<div class="right-column_icon"><img src="../png/set.png" style="width: 20px;"/></div>
+				<div class="right-column_icon"><img src="../png/set.png" style="width: 20px;"/></div>
+				<div class="right-column_icon"><img src="../png/set.png" style="width: 20px;"/></div>
+			</div>
+			<div class="right-column_plus" title="获取插件">
+				<img src="../png/plus.png" style="width: 20px;"/>
+			</div>
+			<div class="right-column_close" title="隐藏侧边栏">
+				<img src="../png/close.png" style="width: 20px;"/>
+			</div>
+		</div>
+		
+		
 </html>
