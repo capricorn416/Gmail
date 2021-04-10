@@ -2,14 +2,14 @@
 	position: fixed;
 	left: 255px;
 	top: 60px;
-	width: 1050px;
+	right: 55px;
 	height: 330px;
 }
 
 .mainbody_column {
 	left: 255px;
 	height: 45px;
-	width: 1035px;
+	margin-right: 20px;
 	border-bottom-color: rgb(240,243,244);
 	border-bottom-style: solid;
 	border-width: thin;
@@ -89,7 +89,7 @@ a:hover {
 }
 
 .mainbody_time {
-	padding-left: 800px;
+	right: 90px;
 	font-size: 13px;
 	color: dimgrey;
 	text-align: right;

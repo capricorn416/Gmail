@@ -83,12 +83,35 @@
 }
 
 .top_navigation {
-	right: 35px;
-	top: 20px;
+	left: 1170px;
+	height: 60px;
+	width: 200px;
 }
 
 .navigation-icon {
-	list-style: none;
-	display: inline;
-	margin-left: 25px;
+	width: 22px;
+	height: 22px;
+	margin: 1px;
+	margin-top: 10px;
+	padding: 9px;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.navigation-icon:hover {
+	background-color: gainsboro;
+	cursor: pointer;
+}
+
+.navigation-icon_right {
+	float: right;
+	margin-top: 5px;
+	margin-right: 18px;
+	width: 22px;
+	height: 22px;
+	padding: 10px;
+}
+
+.navigation-icon_right {
+	cursor: pointer;
 }
