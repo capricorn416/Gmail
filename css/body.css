@@ -1,4 +1,5 @@
 .mainbody {
+	z-index: 1000;
 	position: fixed;
 	left: 255px;
 	top: 60px;
@@ -60,7 +61,7 @@
 }
 .mainbody_save-icon {
 	height: 6px;
-	background-color: rgb(240,243,244);
+	background-color: 
 	border-radius: 3px;
 }
 
@@ -93,4 +94,206 @@ a:hover {
 	font-size: 13px;
 	color: dimgrey;
 	text-align: right;
+}
+
+.write-box {
+	z-index: 10000;
+	position: fixed;
+	left: 790px;
+	bottom: 0;
+	height: 450px;
+	width: 500px;
+	background-color: white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-style: solid;
+	border-width: thin;
+	border-color: rgb(240,243,244);
+	box-shadow: 0px 5px 20px gainsboro;
+}
+
+.write-box_top {
+	background-color: #696969;
+	height: 40px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.write-box_topright {
+	cursor: pointer;
+}
+
+.new {
+	position: relative;
+	color: #FFFFFF;
+	left: 16px;
+	top: 7px;
+}
+
+.mini,
+.max,
+.close {
+	color: #DCDCDC;
+	font-size: 20px;
+	position: relative;
+	display: inline-block;
+	margin-left: 5px;
+	left: 384px;
+	top: 8px;
+}
+
+.mini {
+	top:-1px;
+}
+
+input,
+textarea {
+	border-style: none;
+}
+
+.write-box_column {
+	margin-left: 15px;
+	height: 40px;
+	width: 470px;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: rgb(240,243,244);
+}
+
+.write-box_receiver,
+.write-box_copy,
+.write-box_topic {
+	position: relative;
+	top: 10px;
+}
+
+.write-box_re {
+	width: 330px;
+}
+
+.write-box_copy {
+	left: 20px;
+}
+
+.write-box_topic {
+	width: 470px;
+
+}
+
+.write-box_body {
+	margin-top: 10px;
+	margin-left: 15px;
+	height: 200px;
+	width: 470px;
+}
+
+.mini-area {
+	position: fixed;
+	bottom: 0;
+	right: 71px;
+	height: 40px;
+	width: 260px;	
+	background-color: #696969;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	box-shadow: 0px 15px 20px gainsboro;
+	display: none;
+}
+
+.write-box_bottom {
+	position: relative;
+	bottom: 0;
+	width: 500px;
+	height: 70px;
+}
+
+.send {
+	position: absolute;
+	top: 61px;
+	left: 15px;
+	height: 40px;
+	width: 100px;
+	background-color: royalblue;
+	border-color: royalblue;
+	border-radius: 5px;
+	color: white;
+}
+
+.change-font {
+	position: absolute;
+	left: 125px;
+	top: 68px;
+	cursor: pointer;
+}
+
+.change-font_area {
+	position: absolute;
+	z-index: 500;
+	left: 15px;
+	top: 345px;
+	width: 470px;
+	height: 35px;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: thin;
+	border-color: rgb(240,243,244);
+	background-color: white;
+	box-shadow: 0px 3px 10px gainsboro;
+}
+
+.font-size-change {
+	position: relative;
+	left: 160px;
+	top: 5px;
+	cursor: pointer;
+}
+
+.font-color-change {
+	position: relative;
+	left: 280px;
+	top: 5px;
+	cursor: pointer;
+}
+
+.font-size-choice {
+	position: absolute;
+	left: 170px;
+	bottom: 100px;
+	z-index: 100000;
+	width: 150px;
+	height: 130px;
+	background-color: white;
+	border-radius: 5px;
+	border-style: solid;
+	border-width: thin;
+	border-color: rgb(240,243,244);
+	box-shadow: 0px 3px 10px gainsboro;
+}
+
+.font-size-choice1,
+.font-size-choice2,
+.font-size-choice3,
+.font-size-choice4 {
+	position: relative;
+	top: 5px;
+	width: 100px;
+	height: 30px;
+	padding-left: 50px;
+	cursor: pointer;
+}
+
+.font-size-choice1 {
+	font-size: 12px;
+}
+
+.font-size-choice2 {
+	font-size: 15px;
+}
+
+.font-size-choice3 {
+	font-size: 20px;
+}
+
+.font-size-choice4 {
+	font-size: 30px;
 }
