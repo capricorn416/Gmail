@@ -80,7 +80,7 @@
 		<!--纯icon-->
 		<div class="hidden-area" id="hidden-area" style="display: none;">
 			<!--写邮件按钮-->
-			<button type="button" class="hidden_writebutton">
+			<button type="button" class="hidden_writebutton" id="writeButtonPlus">
 				<span class="writebutton_img"><img src="../png/plus.png" style="width: 30px"/></span>
 			</button>
 			<br>
@@ -182,7 +182,7 @@
 		</div>
 		
 		<!--写邮件区域-->
-		<div class="write-box" id="writebox">
+		<div class="write-box" id="writebox" style="display: none;">
 			<div class="write-box_top" id="moveArea">
 				<span class="new">新邮件</span>
 				<span class="mini write-box_topright">_</span>
@@ -203,6 +203,33 @@
 				<div class="font-size-choice3" id="size3">大</div>
 				<div class="font-size-choice4" id="size4">最大</div>
 			</div>
+			
+			<div>
+				<table style="background-color: #DCDCDC; display: none;" class="color-span">
+					<tr>
+						<th>1</th>
+						<th>2</th>
+						<th>3</th>
+						<th>1</th>
+						<th>2</th>
+						<th>3</th>
+						<th>1</th>
+						<th>2</th>
+					</tr>
+					<tr>
+						<th>3</th>
+						<th>4</th>
+						<th></th>
+						<th>1</th>
+						<th>2</th>
+						<th>3</th>
+						<th>1</th>
+						<th>2</th>
+					</tr>
+				</table>
+			</div>
+			
+			
 			<div class="change-font_area" style="display: none;">
 				<img src="../png/字体大小.png" class="font-size-change" style="width: 25px;">
 				<img src="../png/字体.png" class="font-color-change" style="width: 25px;">
@@ -216,10 +243,25 @@
 		
 		<!--写邮件区域最小化-->
 		<div class="mini-area" >
-			<span class="new">新邮件</span>
-			<span class="mini write-box_topright">_</span>
-			<span class="max write-box_topright">/</span>
-			<span class="close write-box_topright">×</span>
+			<span class="mini_new">新邮件</span>
+			<span class="mini_mini">_</span>
+			<span class="mini_max">/</span>
+			<span class="mini_close">×</span>
+		</div>
+		
+		<!--写邮件区域最大化-->
+		<div class="mask" style="display: none;"></div>
+		<div class="max-area" style="display: none;">
+			<div class="max-area_top">
+				<span class="max_new">新邮件</span>
+				<span class="max_mini max-area_topright">_</span>
+				<span class="max_max max-area_topright">/</span>
+				<span class="max_close max-area_topright">×</span>
+			</div>
+			<div class="max-area_column"></div>
+			<div class="max-area_column"></div>
+			
+		
 		</div>
 	</body>
 </html>

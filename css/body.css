@@ -112,7 +112,8 @@ a:hover {
 	box-shadow: 0px 5px 20px gainsboro;
 }
 
-.write-box_top {
+.write-box_top,
+.max-area_top {
 	background-color: #696969;
 	height: 40px;
 	border-top-left-radius: 10px;
@@ -123,11 +124,13 @@ a:hover {
 	cursor: pointer;
 }
 
-.new {
+.new,
+.max_new,
+.mini_new {
 	position: relative;
 	color: #FFFFFF;
-	left: 16px;
-	top: 7px;
+	left: 15px;
+	top: 5px;
 }
 
 .mini,
@@ -138,9 +141,11 @@ a:hover {
 	position: relative;
 	display: inline-block;
 	margin-left: 5px;
-	left: 384px;
-	top: 8px;
+	left: 379px;
+	top: 6px;
 }
+
+
 
 .mini {
 	top:-1px;
@@ -151,13 +156,21 @@ textarea {
 	border-style: none;
 }
 
-.write-box_column {
+.write-box_column,
+.max-area_column {
 	margin-left: 15px;
 	height: 40px;
-	width: 470px;
 	border-bottom-style: solid;
 	border-bottom-width: thin;
 	border-bottom-color: rgb(240,243,244);
+}
+
+.write-box_column {
+	width:470px;
+}
+
+.max-area_column {
+	margin-right: 15px;
 }
 
 .write-box_receiver,
@@ -296,4 +309,68 @@ textarea {
 
 .font-size-choice4 {
 	font-size: 30px;
+}
+
+.mask {
+	position: fixed;
+	z-index: 100000;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: black;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+
+.max-area {
+	position: fixed;
+	z-index: 1000000;
+	left: 155px;
+	right: 155px;
+	top: 38px;
+	bottom: 38px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: white;
+}
+
+.max_mini,
+.max_max,
+.max_close {
+	color: #DCDCDC;
+	font-size: 20px;
+	position: relative;
+	display: inline-block;
+	margin-left: 5px;
+	left: 935px;
+	top: 8px;
+	cursor: pointer;
+}
+
+.max_mini {
+	top: -1px;
+}
+
+.mini_mini,
+.mini_max,
+.mini_close {
+	color: #DCDCDC;
+	font-size: 20px;
+	position: relative;
+	display: inline-block;
+	margin-left: 5px;
+	left: 138px;
+	top: 7px;
+	cursor: pointer;
+}
+
+.mini_mini {
+	top: -1px;
+}
+
+table {
+	border-spacing: 10px;
 }

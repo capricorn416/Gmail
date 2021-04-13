@@ -23,6 +23,9 @@ window.onload = function(){
 	document.getElementById("writeButton").onclick = function(){
 		writeBox.style.display = "block";
 	}
+	document.getElementById("writeButtonPlus").onclick = function(){
+		writeBox.style.display = "block";
+	}
 	//写邮件页面的关闭
 	document.getElementsByClassName("close")[0].onclick = function(){
 		writeBox.style.display = "none";
@@ -33,6 +36,41 @@ window.onload = function(){
 		miniArea.style.display = "block";
 	}
 	
+	//写邮件最大化、正常、最小化、关闭的切换
+	document.getElementsByClassName("max")[0].onclick = function(){
+		writeBox.style.display = "none";
+		document.getElementsByClassName("mask")[0].style.display = "block";
+		document.getElementsByClassName("max-area")[0].style.display = "block";
+	}
+	document.getElementsByClassName("max_max")[0].onclick = function(){
+		writeBox.style.display = "block";
+		document.getElementsByClassName("mask")[0].style.display = "none";
+		document.getElementsByClassName("max-area")[0].style.display = "none";
+	}
+	document.getElementsByClassName("max_mini")[0].onclick = function(){
+		miniArea.style.display = "block";
+		document.getElementsByClassName("mask")[0].style.display = "none";
+		document.getElementsByClassName("max-area")[0].style.display = "none";
+	}
+	document.getElementsByClassName("max_close")[0].onclick = function(){
+		document.getElementsByClassName("mask")[0].style.display = "none";
+		document.getElementsByClassName("max-area")[0].style.display = "none";
+	}
+	document.getElementsByClassName("mini_close")[0].onclick = function(){
+		miniArea.style.display = "none";
+	}
+	document.getElementsByClassName("mini_max")[0].onclick = function(){
+		miniArea.style.display = "none";
+		document.getElementsByClassName("mask")[0].style.display = "block";
+		document.getElementsByClassName("max-area")[0].style.display = "block";
+	}
+	document.getElementsByClassName("mini_mini")[0].onclick = function(){
+		writeBox.style.display = "block";
+		miniArea.style.display = "none";
+		
+	}
+	
+	//字体改变区域的出现
 	var j = 0;
 	document.getElementsByClassName("change-font")[0].onclick = function(){
 		if(j%2 == 0){
