@@ -11,7 +11,7 @@
 	<body>
 
 		<script type="text/javascript" src="../js/js.js"></script>
-		<script type="text/javascript" src="../js/js2.js"></script>
+		<script type="text/javascript" src="../js/new_file.js"></script>
 		<!--顶部-->
 		<div class="top">
 			<span class="top_menu" title="主菜单" id="menu-button"><img src="../png/menu.png" style="width: 20px;"/></span>
@@ -37,12 +37,12 @@
 			</button>
 			<br>
 			<ul class="menu_box">
-				<li class="menu_opt"><img src="../png/set.png" class="opt-icon"/><span class="opt-word">收件箱</span></li>
-				<li class="menu_opt"><img src="../png/set.png" class="opt-icon"/><span class="opt-word">已加星标</span></li>
-				<li class="menu_opt"><img src="../png/set.png" class="opt-icon"/><span class="opt-word">已延后</span></li>
-				<li class="menu_opt"><img src="../png/set.png" class="opt-icon"/><span class="opt-word">已发邮件</span></li>
-				<li class="menu_opt"><img src="../png/set.png" class="opt-icon"/><span class="opt-word">草稿</span></li>
-				<li class="menu_opt"><img src="../png/set.png" class="opt-icon"/><span class="opt-word">垃圾邮件</span></li>
+				<li class="menu_opt menu_opt1"><img src="../png/set.png" class="opt-icon"/><span class="opt-word">收件箱</span></li>
+				<li class="menu_opt menu_opt2"><img src="../png/set.png" class="opt-icon"/><span class="opt-word">已加星标</span></li>
+				<li class="menu_opt menu_opt3"><img src="../png/set.png" class="opt-icon"/><span class="opt-word">已延后</span></li>
+				<li class="menu_opt menu_opt4"><img src="../png/set.png" class="opt-icon"/><span class="opt-word">已发邮件</span></li>
+				<li class="menu_opt menu_opt5"><img src="../png/set.png" class="opt-icon"/><span class="opt-word">草稿</span></li>
+				<li class="menu_opt menu_opt6"><img src="../png/set.png" class="opt-icon"/><span class="opt-word">垃圾邮件</span></li>
 			</ul>
 			
 			<!--会议-->
@@ -120,7 +120,8 @@
 
 	
 		<!--主体-->
-		<div class="mainbody" id="main-body">
+	<div class="mainbody">
+		<div class="mainbody1 body1" id="main-body">
 			<!--第一行-->
 			<div class="mainbody_column">
 				<div class="column-option column-option_left"><img src="../png/square.png" style="width: 25px;"/></div>
@@ -165,6 +166,64 @@
 			</div>
 		</div>
 		
+		<!--主体2-->
+		<div class="mainbody2 body1" id="main-body2">
+			<!--第一行-->
+			<div class="mainbody_column2">
+				<div class="column-option2 column-option_left2"><img src="../png/square.png" style="width: 25px;"/></div>
+				<div class="column-option2"><img src="../png/refresh.png" style="width: 18px;"/></div>
+				<div class="column-option2"><img src="../png/menu.png" style="width: 20px;"/></div>
+				<!--输入法-->
+				<select class="mainbody_input2">
+					<option>拼音</option><option>双拼</option><option>双拼</option><option>双拼</option>
+					<option>双拼</option><option>双拼</option><option>双拼</option><option>五笔</option>
+				</select>
+			</div>
+			<!--第二行-->
+			<div class="mainbody_column2">
+				<img  class="column_open2"/>
+				<font class="column_tip2 column_tip_2">没有已加星标的邮件。您可以通过加注星标为邮件设定一种特殊状态，使邮件查找起来更方便。要为邮件加注星标，请点击相应邮件或会话旁边的星标轮廓图。</font>
+			</div>
+		</div>
+		
+		<!--主体3-->
+		<div class="mainbody3 body1" id="main-body3">
+			<!--第一行-->
+			<div class="mainbody_column">
+				<div class="column-option column-option_left"><img src="../png/square.png" style="width: 25px;"/></div>
+				<div class="column-option"><img src="../png/refresh.png" style="width: 18px;"/></div>
+				<div class="column-option"><img src="../png/menu.png" style="width: 20px;"/></div>
+				<!--输入法-->
+				<select class="mainbody_input">
+					<option>拼音</option><option>双拼</option><option>双拼</option><option>双拼</option>
+					<option>双拼</option><option>双拼</option><option>双拼</option><option>五笔</option>
+				</select>
+			</div>
+			<!--第二行-->
+			<div class="mainbody_column">
+			</div>
+		</div>
+		
+		<!--主体4-->
+		<div class="mainbody4 body1" id="main-body4">
+			<!--第一行-->
+			<div class="mainbody_column">
+				<div class="column-option column-option_left"><img src="../png/square.png" style="width: 25px;"/></div>
+				<div class="column-option"><img src="../png/refresh.png" style="width: 18px;"/></div>
+				<div class="column-option"><img src="../png/menu.png" style="width: 20px;"/></div>
+				<!--输入法-->
+				<select class="mainbody_input">
+					<option>拼音</option><option>双拼</option><option>双拼</option><option>双拼</option>
+					<option>双拼</option><option>双拼</option><option>双拼</option><option>五笔</option>
+				</select>
+			</div>
+			<!--第二行-->
+			<div class="mainbody_column">
+				<font class="column_tip column_tip4">未发送任何邮件！ 立即<u style="color: blue;">发送</u>邮件！</font>
+			</div>
+		</div>
+	</div>
+		
 		<!--侧边栏-->
 		<div class="right-column">
 			<div class="right-column_icons">
@@ -198,36 +257,13 @@
 			<div class="write-box_column"><input type="text" class="write-box_topic" placeholder="主题"></div>
 			<textarea class="write-box_body" id="w"></textarea>
 			<div class="font-size-choice" style="display: none;">
-				<div class="font-size-choice1" id="size1">小</div>
-				<div class="font-size-choice2" id="size2">正常</div>
-				<div class="font-size-choice3" id="size3">大</div>
-				<div class="font-size-choice4" id="size4">最大</div>
+				<div class="font-size-choice1 size" id="size1">小</div>
+				<div class="font-size-choice2 size" id="size2">正常</div>
+				<div class="font-size-choice3 size" id="size3">大</div>
+				<div class="font-size-choice4 size" id="size4">最大</div>
 			</div>
 			
-			<div>
-				<table style="background-color: #DCDCDC; display: none;" class="color-span">
-					<tr>
-						<th>1</th>
-						<th>2</th>
-						<th>3</th>
-						<th>1</th>
-						<th>2</th>
-						<th>3</th>
-						<th>1</th>
-						<th>2</th>
-					</tr>
-					<tr>
-						<th>3</th>
-						<th>4</th>
-						<th></th>
-						<th>1</th>
-						<th>2</th>
-						<th>3</th>
-						<th>1</th>
-						<th>2</th>
-					</tr>
-				</table>
-			</div>
+	
 			
 			
 			<div class="change-font_area" style="display: none;">
