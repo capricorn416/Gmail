@@ -421,3 +421,36 @@ textarea {
 	top: -1px;
 }
 
+.unread {
+	display: none;
+}
+
+.unread:hover{
+	border-style: solid;
+	border-width: thin;
+	border-color: rgb(240,243,244);
+	box-shadow: 0px 5px 5px gainsboro;
+}
+
+.other {
+	display: none;
+}
+
+.other:hover {
+	border-style: solid;
+	border-width: thin;
+	border-color: rgb(240,243,244);
+	box-shadow: 0px 5px 5px gainsboro;
+}
+
+.open-icon:hover{
+	cursor: pointer;
+}
+
+.star:hover{
+	cursor: pointer;
+}
+
+.star-letter{
+	display: none;
+}

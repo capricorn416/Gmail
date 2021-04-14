@@ -3,6 +3,8 @@ window.onload = function(){
 	var mbox = document.getElementById("menu-box");
 	var mbody = document.getElementById("main-body");
 	var mbody2 = document.getElementById("main-body2");
+	var mbody3 = document.getElementById("main-body3");
+	var mbody4 = document.getElementById("main-body4");	
 	var hbox = document.getElementById("hidden-area");
 	//点击“主菜单”导航抽屉打开和关闭
 	document.getElementById("menu-button").onclick = function(){
@@ -10,12 +12,10 @@ window.onload = function(){
 			mbox.style.display = "none";
 			hbox.style.display = "block";
 			mbody.style.left = mbody.offsetLeft -180 + 'px';
-			mbody2.style.left = mbody2.offsetLeft -180 + 'px';
 		}else{
 			mbox.style.display = "block";
 			hbox.style.display = "none";
 			mbody.style.left = mbody.offsetLeft +180 + 'px';
-			mbody2.style.left = mbody2.offsetLeft +180 + 'px';
 		}
 		i++;
 	}
@@ -134,6 +134,34 @@ window.onload = function(){
 		r[3].style.backgroundColor = "rgb(240,243,244)";
 	}	
 	
+	//未读/其他邮件的展开和收缩
+	var p = 0;
+	document.getElementsByClassName("open-icon")[0].onclick = function(){
+		if(p%2==0){
+			for(var i=0;i<=1;i++){
+				document.getElementsByClassName("unread")[i].style.display = "block";
+			}
+		}else{
+			for(var i=0;i<=1;i++){
+				document.getElementsByClassName("unread")[i].style.display = "none";
+			}
+		} 
+		p++;
+	}
+	var q = 0;
+	document.getElementsByClassName("open-icon")[1].onclick = function(){
+		if(q%2==0){
+			for(var i=0;i<=1;i++){
+				document.getElementsByClassName("other")[i].style.display = "block";
+			}
+		}else{
+			for(var i=0;i<=1;i++){
+				document.getElementsByClassName("other")[i].style.display = "none";
+			}
+		} 
+		q++;
+	}
+	
 	
 	//改变字体大小
 	var w = document.getElementById("w");
@@ -148,8 +176,32 @@ window.onload = function(){
 		w.style.fontSize = window.getComputedStyle(s[this.idx]).fontSize;
 		}
 	}
-
-	
+		var u=0;
+		document.getElementsByClassName("star")[0].onclick = function(){
+			if(u%2==0){
+				document.getElementsByClassName("star")[0].src="../png/星标%20(4).png";
+				document.getElementsByClassName("star-letter_tip")[0].style.display="none";
+				document.getElementsByClassName("star-letter")[0].style.display="block";
+			}else{
+				document.getElementsByClassName("star")[0].src="../png/星标%20(2).png";
+				document.getElementsByClassName("star-letter")[0].style.display="none";
+			}
+			u++;
+		}
+		
+		var v=0;
+		document.getElementsByClassName("star")[1].onclick = function(){
+			if(v%2==0){
+				document.getElementsByClassName("star")[1].src="../png/星标%20(4).png";
+				document.getElementsByClassName("star-letter_tip")[0].style.display="none";
+				document.getElementsByClassName("star-letter")[1].style.display="block";
+				
+			}else{
+				document.getElementsByClassName("star")[1].src="../png/星标%20(2).png";
+				document.getElementsByClassName("star-letter")[1].style.display="none";
+			}
+			v++;
+		}
 	//写邮件页面的拖拽移动
 	var moveArea = document.getElementById("moveArea");
 	drag(writeBox);
