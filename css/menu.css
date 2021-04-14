@@ -57,9 +57,11 @@
 .menu_box {
 	list-style: none;
 	margin-top: 15px;
+	margin-left: -40px;
 	width: 255px;
 	height: 180px;
 	border: none;
+	
 }
 
 .menu_opt,
@@ -67,13 +69,18 @@
 	margin-top: 13px;
 }
 
-.menu_opt:hover {
+.menu_opt {
+	padding-left: 30px;
+	width: 200px;
 	cursor: pointer;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	
 }
 
 .opt-icon {
 	float: left;
-	margin-left: -12px;
+
 	width: 20px;
 }
 
@@ -88,6 +95,10 @@
 .hangouts_head,
 .tip {
 	font-size: 14px;
+}
+
+.meeting_opt {
+	margin-left: -10px;
 }
 
 .meeting {

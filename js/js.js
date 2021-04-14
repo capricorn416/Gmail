@@ -2,6 +2,7 @@ window.onload = function(){
 	var i = 0;
 	var mbox = document.getElementById("menu-box");
 	var mbody = document.getElementById("main-body");
+	var mbody2 = document.getElementById("main-body2");
 	var hbox = document.getElementById("hidden-area");
 	//点击“主菜单”导航抽屉打开和关闭
 	document.getElementById("menu-button").onclick = function(){
@@ -9,10 +10,12 @@ window.onload = function(){
 			mbox.style.display = "none";
 			hbox.style.display = "block";
 			mbody.style.left = mbody.offsetLeft -180 + 'px';
+			mbody2.style.left = mbody2.offsetLeft -180 + 'px';
 		}else{
 			mbox.style.display = "block";
 			hbox.style.display = "none";
 			mbody.style.left = mbody.offsetLeft +180 + 'px';
+			mbody2.style.left = mbody2.offsetLeft +180 + 'px';
 		}
 		i++;
 	}
@@ -87,26 +90,65 @@ window.onload = function(){
 		k++;
 	}
 	
+	//切换页面
+	var r = document.getElementsByClassName("menu_opt");
+	var b = document.getElementsByClassName("body1");
+	r[0].style.backgroundColor = "rgb(240,243,244)";
+	r[0].onclick = function(){
+		b[1].style.display = "none";
+		b[2].style.display = "none";
+		b[3].style.display = "none";
+		r[1].style.backgroundColor = "white";
+		r[2].style.backgroundColor = "white";
+		r[3].style.backgroundColor = "white";
+		r[0].style.backgroundColor = "rgb(240,243,244)";	
+	}
+	
+	r[1].onclick = function(){
+		b[1].style.display = "block";
+		b[2].style.display = "none";
+		b[3].style.display = "none";
+		r[0].style.backgroundColor = "white";
+		r[2].style.backgroundColor = "white";
+		r[3].style.backgroundColor = "white";
+		r[1].style.backgroundColor = "rgb(240,243,244)";
+	}
+
+	r[2].onclick = function(){
+		b[1].style.display = "none";
+		b[3].style.display = "none";
+		b[2].style.display = "block";
+		r[0].style.backgroundColor = "white";
+		r[1].style.backgroundColor = "white";
+		r[3].style.backgroundColor = "white";
+		r[2].style.backgroundColor = "rgb(240,243,244)";
+	}
+	
+	r[3].onclick = function(){
+		b[1].style.display = "none";
+		b[2].style.display = "none";
+		b[3].style.display = "block";
+		r[0].style.backgroundColor = "white";
+		r[1].style.backgroundColor = "white";
+		r[2].style.backgroundColor = "white";
+		r[3].style.backgroundColor = "rgb(240,243,244)";
+	}	
+	
+	
 	//改变字体大小
 	var w = document.getElementById("w");
-	var s1 = document.getElementById("size1");
-	var s2 = document.getElementById("size2");
-	var s3 = document.getElementById("size3");
-	var s4 = document.getElementById("size4");
-	sizeChange(s1);
-	sizeChange(s2);
-	sizeChange(s3);
-	sizeChange(s4);
-	function sizeChange(s){
-		s.onclick = function(){
-			s1.style.backgroundColor = "white";
-			s2.style.backgroundColor = "white";
-			s3.style.backgroundColor = "white";
-			s4.style.backgroundColor = "white";
-			s.style.backgroundColor = "rgb(240,243,244)";
-			w.style.fontSize = window.getComputedStyle(s).fontSize;
+	var s = document.getElementsByClassName("size");
+	for(var i=0;i<s.length;i++){
+		s[i].idx = i;
+		s[i].onclick = function(){
+			for(var j=0;j<s.length;j++){
+			s[j].style.backgroundColor = "white";
+			}
+		s[this.idx].style.backgroundColor = "rgb(240,243,244)";
+		w.style.fontSize = window.getComputedStyle(s[this.idx]).fontSize;
 		}
 	}
+
 	
 	//写邮件页面的拖拽移动
 	var moveArea = document.getElementById("moveArea");
@@ -129,7 +171,7 @@ window.onload = function(){
 			}
 		}
 	}
-	
+
 
 }
 

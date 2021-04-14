@@ -1,13 +1,44 @@
 .mainbody {
-	z-index: 1000;
 	position: fixed;
 	left: 255px;
 	top: 60px;
 	right: 55px;
 	height: 330px;
+	background-color: white;
+}
+.mainbody1,
+.mainbody2,
+.mainbody3,
+.mainbody4 {
+	position: fixed;
+	left: 255px;
+	top: 60px;
+	right: 55px;
+	height: 330px;
+	background-color: white;
 }
 
-.mainbody_column {
+.mainbody1 {
+	z-index: 860;
+}
+
+.mainbody2 {
+	z-index: 840;
+	display: none;
+}
+
+.mainbody3 {
+	z-index: 820;	
+	display: none;
+}
+
+.mainbody4 {
+	z-index: 800;
+	display: none;
+}
+
+.mainbody_column,
+.mainbody_column2 {
 	left: 255px;
 	height: 45px;
 	margin-right: 20px;
@@ -16,7 +47,8 @@
 	border-width: thin;
 }
 
-.column-option {
+.column-option,
+.column-option2 {
 	display: inline-block;
 	margin-top: 0;
 	margin-left: 0;
@@ -25,11 +57,13 @@
 	padding: 10px;
 }
 
-.column-option_left {
+.column-option_left,
+.column-option_left2 {
 	margin-left: 5px;
 }
 
-.mainbody_input {
+.mainbody_input,
+.mainbody_input2 {
 	float: right;
 	margin-right: 20px;
 	margin-top: 8px;
@@ -39,17 +73,33 @@
 	cursor: pointer;
 }
 
-.column_open {
+.column_open,
+.column_open2 {
 	float: left;
 	margin-left: 18px;
 	margin-top: 15px;
 	width: 16px;
 }
 
-.column_tip {
+.column_tip,
+.column_tip2 {
 	 position: absolute;
 	 margin-top: 12px;
 	 margin-left: 13px;
+}
+
+.column_tip_2 {
+	font-size: 14px;
+}
+
+.column_tip4 {
+	font-size: 14px;
+	margin-left: 400px;
+}
+
+.send2 {
+	color: blue;
+	
 }
 
 .mainbody_save {	
@@ -61,7 +111,7 @@
 }
 .mainbody_save-icon {
 	height: 6px;
-	background-color: 
+	background-color: rgb(240,243,244); 
 	border-radius: 3px;
 }
 
@@ -97,7 +147,7 @@ a:hover {
 }
 
 .write-box {
-	z-index: 10000;
+	z-index: 995;
 	position: fixed;
 	left: 790px;
 	bottom: 0;
@@ -272,7 +322,7 @@ textarea {
 	position: absolute;
 	left: 170px;
 	bottom: 100px;
-	z-index: 100000;
+	z-index: 999;
 	width: 150px;
 	height: 130px;
 	background-color: white;
@@ -313,7 +363,7 @@ textarea {
 
 .mask {
 	position: fixed;
-	z-index: 100000;
+	z-index: 997;
 	left: 0;
 	top: 0;
 	right: 0;
@@ -327,7 +377,7 @@ textarea {
 
 .max-area {
 	position: fixed;
-	z-index: 1000000;
+	z-index: 998;
 	left: 155px;
 	right: 155px;
 	top: 38px;
@@ -371,6 +421,3 @@ textarea {
 	top: -1px;
 }
 
-table {
-	border-spacing: 10px;
-}
